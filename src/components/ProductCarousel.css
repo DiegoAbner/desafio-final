@@ -1,0 +1,27 @@
+.carousel-container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .slick-prev:before,
+  .slick-next:before {
+    content: none; /* Remove default arrows */
+  }
+  
+  .slick-prev,
+  .slick-next {
+    z-index: 1;
+  }
+  
+  .slick-prev {
+    left: -25px;
+  }
+  
+  .slick-next {
+    right: -25px;
+  }
+  

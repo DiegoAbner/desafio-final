@@ -2,6 +2,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #F5F5F5;
 }
 
 header {
@@ -17,6 +18,24 @@ header {
   text-align: center;
   box-sizing: border-box;
   padding: 0 20px;
+}
+
+.header-abnerLogo {
+  height: 100px; 
+  width: auto;
+  margin-right: auto; 
+}
+
+.header-mlLogo {
+  height: 100px; 
+  width: auto;
+  margin-left: auto; 
+}
+
+.slogan-container{
+  color: black;
+font-size: 24px;
+text-align: left
 }
 
 .product-list {
@@ -66,4 +85,17 @@ header {
     width: 100%;
     max-width: none;
   }
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+.slick-prev {
+  left: -25px;
+}
+
+.slick-next {
+  right: -25px;
 }
