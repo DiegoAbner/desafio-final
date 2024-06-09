@@ -3,8 +3,10 @@ import React from 'react';
 const ProductCard = ({ product }) => (
   <div className="product-card">
     <img src={product.thumbnail} alt={product.title} />
-    <h2>{product.title}</h2>
+   <div className="product-details">
+    <h2 className="product-title">{product.title}</h2>
     <p>Price: ${product.price}</p>
+    </div>
   </div>
 );
 

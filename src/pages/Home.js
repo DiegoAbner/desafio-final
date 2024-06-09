@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import ProductCarousel from '../components/ProductCarousel';
 
-const Home = () => {
+const Home = ({ searchValue }) => {
   const [products, setProducts] = useState([]);
+
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -21,9 +22,15 @@ const Home = () => {
     fetchProducts();
   }, []);
 
+  const filteredProducts = products.filter(product =>
+    product.title.toLowerCase().includes(searchValue.toLowerCase())
+  );
+
   return (
     <div>
-      <ProductCarousel products={products} />
+      <div className="product-list">
+      <ProductCarousel products={filteredProducts} />
+      </div>
     </div>
   );
 }

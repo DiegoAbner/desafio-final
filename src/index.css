@@ -33,9 +33,15 @@ header {
 }
 
 .slogan-container{
+  margin: 0px 15px 15px;
   color: black;
-font-size: 24px;
-text-align: left
+font-size: 10px;
+text-align: right;
+}
+
+.searchInput{
+width: 320px;
+
 }
 
 .product-list {
@@ -50,13 +56,24 @@ text-align: left
   margin: 10px;
   padding: 20px;
   text-align: center;
-  width: 100%;
   max-width: 200px;
+  width: 250px;  
+  height: 274px; 
   box-sizing: border-box;
+  
 }
 
+.product-card .product-details {
+  width: 100%;
+  text-align: center;
+}
 .product-card img {
   max-width: 100%;
+  max-height: 70%;
+}
+
+.product-title{
+  font-size: small;
 }
 
 @media (max-width: 1280px) {
@@ -70,8 +87,7 @@ text-align: left
   }
 
   .product-card {
-    width: 100%;
-    max-width: 300px;
+    max-width: 200px;
   }
 }
 
@@ -82,7 +98,6 @@ text-align: left
   }
 
   .product-card {
-    width: 100%;
     max-width: none;
   }
 }
