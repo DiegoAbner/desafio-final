@@ -8,7 +8,7 @@ const Home = ({ searchValue }) => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch('https://api.mercadolibre.com/sites/MLB/search?q=ofertas');
+        const response = await fetch('https://api.mercadolibre.com/sites/MLB/search?category=MLB1055');
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }

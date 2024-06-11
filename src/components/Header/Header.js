@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import abnerLogo from '../../images/abner-solto.png';
 import mlLogo from '../../images/logo-ml.png';
+import cartIcon from '../../images/cart-icon.png'
 import './Header.css';
 
 const Header = ({ onSearchChange }) => {
@@ -25,6 +26,7 @@ const Header = ({ onSearchChange }) => {
         Sua compra e entrega.<br />Onde você estiver
       </h1>
       <img src={mlLogo} alt="mllogo" className="header-mlLogo" />
+      <img src={cartIcon} alt="cartIcon" className='header-cartLogo' />
     </header>
   );
 }

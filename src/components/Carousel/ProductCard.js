@@ -1,13 +1,15 @@
 import React from 'react';
+import './ProductCarousel.css';
 
-const ProductCard = ({ product }) => (
-  <div className="product-card">
-    <img src={product.thumbnail} alt={product.title} />
-   <div className="product-details">
-    <h2 className="product-title">{product.title}</h2>
-    <p>Price: ${product.price}</p>
+const ProductCard = ({ product }) => {
+  return (
+    <div className="product-card">
+      <img src={product.thumbnail} alt={product.title} />
+      <p>{product.title}</p>
+      <p>R${product.price.toFixed(2)}</p>
+      <button className="buy-button">Comprar</button>
     </div>
-  </div>
-);
+  );
+}
 
 export default ProductCard;

@@ -24,6 +24,11 @@ header {
     width: auto;
     margin-left: auto; 
   }
+
+  .header-cartLogo{
+    height: 40px; 
+    width: auto;
+  }
   
   .slogan-container{
     margin: 0px 15px 15px;
