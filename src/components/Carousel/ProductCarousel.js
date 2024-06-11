@@ -42,6 +42,7 @@ const ProductCarousel = ({ products }) => {
 
   return (
     <div className="carousel-container">
+      <h2 className="carousel-title">Recomendamos para você:</h2>
       <Slider {...settings}>
         {products.map(product => (
           <div key={product.id}>

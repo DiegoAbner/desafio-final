@@ -5,76 +5,9 @@ body {
   background-color: #F5F5F5;
 }
 
-header {
-  background-color: #FFE600;
-  color: white;
-  width: 100%;
-  max-width: 1280px;
-  height: 147px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 0 20px;
-}
 
-.header-abnerLogo {
-  height: 100px; 
-  width: auto;
-  margin-right: auto; 
-}
 
-.header-mlLogo {
-  height: 100px; 
-  width: auto;
-  margin-left: auto; 
-}
 
-.slogan-container{
-  margin: 0px 15px 15px;
-  color: black;
-font-size: 10px;
-text-align: right;
-}
-
-.searchInput{
-width: 320px;
-
-}
-
-.product-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 20px;
-}
-
-.product-card {
-  border: 1px solid #ccc;
-  margin: 10px;
-  padding: 20px;
-  text-align: center;
-  max-width: 200px;
-  width: 250px;  
-  height: 274px; 
-  box-sizing: border-box;
-  
-}
-
-.product-card .product-details {
-  width: 100%;
-  text-align: center;
-}
-.product-card img {
-  max-width: 100%;
-  max-height: 70%;
-}
-
-.product-title{
-  font-size: small;
-}
 
 @media (max-width: 1280px) {
   header {

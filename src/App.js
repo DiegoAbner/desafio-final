@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import Header from './components/Header';
+import Header from './components/Header/Header';
 import Home from './pages/Home';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
   const [searchValue, setSearchValue] = useState('');
@@ -13,6 +14,7 @@ const App = () => {
     <div>
       <Header onSearchChange={handleSearchChange} />
       <Home searchValue={searchValue} />
+      <Footer />
     </div>
   );
 }

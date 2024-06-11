@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import ProductCarousel from '../components/ProductCarousel';
+import ProductCarousel from '../components/Carousel/ProductCarousel';
 
 const Home = ({ searchValue }) => {
   const [products, setProducts] = useState([]);
@@ -8,7 +8,7 @@ const Home = ({ searchValue }) => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch('https://api.mercadolibre.com/sites/MLB/search?category=MLB1055');
+        const response = await fetch('https://api.mercadolibre.com/sites/MLB/search?q=ofertas');
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }

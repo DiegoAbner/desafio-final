@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import abnerLogo from '../images/abner-solto.png';
-import mlLogo from '../images/logo-ml.png';
+import abnerLogo from '../../images/abner-solto.png';
+import mlLogo from '../../images/logo-ml.png';
+import './Header.css';
 
 const Header = ({ onSearchChange }) => {
   const [searchValue, setSearchValue] = useState('');
