@@ -5,6 +5,7 @@ import mlLogo from '../../images/logo-ml.png';
 import cartIcon from '../../images/cart-icon.png';
 import './Header.css';
 
+
 const Header = ({ onSearchChange }) => {
   const [searchValue, setSearchValue] = useState('');
 

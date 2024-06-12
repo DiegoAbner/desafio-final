@@ -7,9 +7,11 @@ const ProductCard = ({ product }) => {
   return (
     <div className="product-card">
       <img src={product.thumbnail} alt={product.title} />
-      <h3>{product.title}</h3>
-      <p>Price: R$ {product.price}</p>
-      <button className='button-add' onClick={() => addToCart(product)}>Adicionar ao Carrinho</button>
+      <p>{product.title}</p>
+      <p>Valor: R$ {product.price}</p>
+    
+        <button className='button-add' onClick={() => addToCart(product)}>Adicionar ao Carrinho</button>
+      
     </div>
   );
 };
