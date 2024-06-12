@@ -1,27 +1,18 @@
-.footer-container {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  
-  .footer-container p {
-    margin: 0;
-    font-size: 14px;
-  }
-  
-  .social-icons {
-    margin-top: 10px;
-  }
-  
-  .social-icon {
-    width: 24px;
-    height: 24px;
-    margin: 0 10px;
-    vertical-align: middle;
-  }
-  
+footer {
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons img {
+  width: 30px;
+  margin: 0 10px;
+}

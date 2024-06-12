@@ -1,0 +1,24 @@
+.cart-page {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .cart-page h2 {
+    text-align: center;
+  }
+  
+  .cart-page ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .cart-page li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .cart-page h3 {
+    text-align: right;
+  }
+  

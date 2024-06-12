@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import abnerLogo from '../../images/abner-solto.png';
 import mlLogo from '../../images/logo-ml.png';
-import cartIcon from '../../images/cart-icon.png'
+import cartIcon from '../../images/cart-icon.png';
 import './Header.css';
 
 const Header = ({ onSearchChange }) => {
@@ -10,7 +11,9 @@ const Header = ({ onSearchChange }) => {
   const handleInputChange = (e) => {
     const value = e.target.value;
     setSearchValue(value);
-    onSearchChange(value);
+    if (onSearchChange) {
+      onSearchChange(value);
+    }
   };
 
   return (
@@ -26,9 +29,12 @@ const Header = ({ onSearchChange }) => {
         Sua compra e entrega.<br />Onde você estiver
       </h1>
       <img src={mlLogo} alt="mllogo" className="header-mlLogo" />
-      <img src={cartIcon} alt="cartIcon" className='header-cartLogo' />
+      <Link to="/cart">
+        <img src={cartIcon} alt="Cart Icon" className='header-cartLogo' />
+      </Link>
     </header>
   );
 }
 
 export default Header;
+

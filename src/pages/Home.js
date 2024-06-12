@@ -4,7 +4,6 @@ import ProductCarousel from '../components/Carousel/ProductCarousel';
 const Home = ({ searchValue }) => {
   const [products, setProducts] = useState([]);
 
-
   useEffect(() => {
     const fetchProducts = async () => {
       try {
@@ -29,7 +28,7 @@ const Home = ({ searchValue }) => {
   return (
     <div>
       <div className="product-list">
-      <ProductCarousel products={filteredProducts} />
+        <ProductCarousel products={filteredProducts} />
       </div>
     </div>
   );
